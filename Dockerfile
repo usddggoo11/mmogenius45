@@ -6,7 +6,7 @@ COPY xray.sh /xray.sh
 RUN chmod +x /xray.sh
 ENV PATH /usr/bin/xray:$PATH
 ENV PORT 8888
-ENV TZ=Asia/Shanghai
+ENV TZ=Asia/JanPan
 
 WORKDIR /etc/xray
 ENTRYPOINT ["/xray.sh"]
